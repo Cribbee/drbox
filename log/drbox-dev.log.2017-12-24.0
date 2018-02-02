@@ -1,0 +1,410 @@
+2017-12-24 13:12:56.473  INFO 5468 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Starting DrboxApplication on archer66 with PID 5468 (C:\Users\xingyi\IdeaProjects\drbox\target\classes started by xingyi in C:\Users\xingyi\IdeaProjects\drbox)
+2017-12-24 13:12:56.482 DEBUG 5468 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2017-12-24 13:12:56.483  INFO 5468 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : The following profiles are active: dev
+2017-12-24 13:12:57.392  INFO 5468 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b8d529: startup date [Sun Dec 24 13:12:57 CST 2017]; root of context hierarchy
+2017-12-24 13:13:02.695  INFO 5468 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-12-24 13:13:02.746  INFO 5468 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-24 13:13:02.747  INFO 5468 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-24 13:13:02.946  INFO 5468 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-24 13:13:02.947  INFO 5468 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5555 ms
+2017-12-24 13:13:03.225  INFO 5468 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-24 13:13:03.233  INFO 5468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-24 13:13:03.234  INFO 5468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-24 13:13:03.234  INFO 5468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-24 13:13:03.236  INFO 5468 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-24 13:13:04.374  INFO 5468 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-12-24 13:13:04.423  INFO 5468 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-12-24 13:13:04.968  INFO 5468 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-12-24 13:13:04.971  INFO 5468 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-12-24 13:13:04.972  INFO 5468 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-12-24 13:13:05.084  INFO 5468 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-24 13:13:05.454  INFO 5468 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-24 13:13:06.086  INFO 5468 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-12-24 13:13:09.153  INFO 5468 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-12-24 13:13:10.180  INFO 5468 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b8d529: startup date [Sun Dec 24 13:12:57 CST 2017]; root of context hierarchy
+2017-12-24 13:13:10.264  INFO 5468 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/getUserInfo],methods=[POST]}" onto public java.lang.String com.lxy11.drbox.action.MainController.getUserInfoById(java.lang.Long)
+2017-12-24 13:13:10.266  INFO 5468 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/setUserInfo],methods=[POST]}" onto public java.lang.String com.lxy11.drbox.action.MainController.addNewUser(java.lang.String,java.lang.String,java.lang.String)
+2017-12-24 13:13:10.270  INFO 5468 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-24 13:13:10.272  INFO 5468 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-24 13:13:10.326  INFO 5468 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 13:13:10.328  INFO 5468 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 13:13:10.416  INFO 5468 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 13:13:10.515  WARN 5468 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-12-24 13:13:11.828  INFO 5468 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-12-24 13:13:11.900  INFO 5468 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-24 13:13:12.138  INFO 5468 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-12-24 13:13:12.144  INFO 5468 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Started DrboxApplication in 17.036 seconds (JVM running for 22.817)
+2017-12-24 13:17:15.205  INFO 13920 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Starting DrboxApplication on archer66 with PID 13920 (C:\Users\xingyi\IdeaProjects\drbox\target\classes started by xingyi in C:\Users\xingyi\IdeaProjects\drbox)
+2017-12-24 13:17:15.207 DEBUG 13920 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2017-12-24 13:17:15.207  INFO 13920 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : The following profiles are active: dev
+2017-12-24 13:17:15.654  INFO 13920 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c7d75ed: startup date [Sun Dec 24 13:17:15 CST 2017]; root of context hierarchy
+2017-12-24 13:17:19.334  INFO 13920 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-12-24 13:17:19.348  INFO 13920 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-24 13:17:19.349  INFO 13920 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-24 13:17:19.493  INFO 13920 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-24 13:17:19.495  INFO 13920 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3840 ms
+2017-12-24 13:17:19.852  INFO 13920 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-24 13:17:19.861  INFO 13920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-24 13:17:19.862  INFO 13920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-24 13:17:19.864  INFO 13920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-24 13:17:19.864  INFO 13920 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-24 13:17:20.923  INFO 13920 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-12-24 13:17:20.945  INFO 13920 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-12-24 13:17:21.072  INFO 13920 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-12-24 13:17:21.074  INFO 13920 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-12-24 13:17:21.079  INFO 13920 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-12-24 13:17:21.156  INFO 13920 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-24 13:17:21.451  INFO 13920 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-24 13:17:21.910  INFO 13920 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-12-24 13:17:22.321  INFO 13920 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-12-24 13:17:22.988  INFO 13920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c7d75ed: startup date [Sun Dec 24 13:17:15 CST 2017]; root of context hierarchy
+2017-12-24 13:17:23.082  INFO 13920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/setUserInfo],methods=[POST]}" onto public java.lang.String com.lxy11.drbox.action.MainController.addNewUser(java.lang.String,java.lang.String,java.lang.String)
+2017-12-24 13:17:23.084  INFO 13920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/getUserInfo],methods=[POST]}" onto public java.lang.String com.lxy11.drbox.action.MainController.getUserInfoById(java.lang.Long)
+2017-12-24 13:17:23.088  INFO 13920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-24 13:17:23.089  INFO 13920 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-24 13:17:23.129  INFO 13920 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 13:17:23.129  INFO 13920 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 13:17:23.195  INFO 13920 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 13:17:23.267  WARN 13920 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-12-24 13:17:23.908  INFO 13920 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-12-24 13:17:23.974  INFO 13920 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-24 13:17:24.046  INFO 13920 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-12-24 13:17:24.055  INFO 13920 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Started DrboxApplication in 9.936 seconds (JVM running for 12.17)
+2017-12-24 13:49:23.909  INFO 9088 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Starting DrboxApplication on archer66 with PID 9088 (C:\Users\xingyi\IdeaProjects\drbox\target\classes started by xingyi in C:\Users\xingyi\IdeaProjects\drbox)
+2017-12-24 13:49:23.912 DEBUG 9088 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2017-12-24 13:49:23.912  INFO 9088 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : The following profiles are active: dev
+2017-12-24 13:49:24.426  INFO 9088 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@386c4fb0: startup date [Sun Dec 24 13:49:24 CST 2017]; root of context hierarchy
+2017-12-24 13:49:26.718  INFO 9088 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-12-24 13:49:26.730  INFO 9088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-24 13:49:26.731  INFO 9088 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-24 13:49:26.859  INFO 9088 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-24 13:49:26.861  INFO 9088 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2434 ms
+2017-12-24 13:49:27.055  INFO 9088 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-24 13:49:27.060  INFO 9088 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-24 13:49:27.061  INFO 9088 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-24 13:49:27.062  INFO 9088 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-24 13:49:27.062  INFO 9088 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-24 13:49:27.646  INFO 9088 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-12-24 13:49:27.660  INFO 9088 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-12-24 13:49:27.744  INFO 9088 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-12-24 13:49:27.746  INFO 9088 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-12-24 13:49:27.748  INFO 9088 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-12-24 13:49:27.797  INFO 9088 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-24 13:49:28.073  INFO 9088 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-24 13:49:28.609  INFO 9088 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-12-24 13:49:28.627  INFO 9088 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: goods_info
+2017-12-24 13:49:28.629  INFO 9088 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: goods_info
+2017-12-24 13:49:29.256  INFO 9088 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user_info
+2017-12-24 13:49:29.257  INFO 9088 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user_info
+2017-12-24 13:49:29.611  INFO 9088 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user_info_goods_info
+2017-12-24 13:49:29.614  INFO 9088 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user_info_goods_info
+2017-12-24 13:49:33.216  INFO 9088 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-12-24 13:49:33.787  INFO 9088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@386c4fb0: startup date [Sun Dec 24 13:49:24 CST 2017]; root of context hierarchy
+2017-12-24 13:49:33.887  INFO 9088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/getUserInfo],methods=[POST]}" onto public java.lang.String com.lxy11.drbox.action.MainController.getUserInfoById(java.lang.Long)
+2017-12-24 13:49:33.889  INFO 9088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/setUserInfo],methods=[POST]}" onto public java.lang.String com.lxy11.drbox.action.MainController.addNewUser(java.lang.String,java.lang.String,java.lang.String)
+2017-12-24 13:49:33.893  INFO 9088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-24 13:49:33.893  INFO 9088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-24 13:49:33.929  INFO 9088 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 13:49:33.929  INFO 9088 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 13:49:33.971  INFO 9088 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 13:49:34.013  WARN 9088 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-12-24 13:49:34.614  INFO 9088 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-12-24 13:49:34.684  INFO 9088 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-24 13:49:34.750  INFO 9088 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-12-24 13:49:34.757  INFO 9088 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Started DrboxApplication in 11.945 seconds (JVM running for 13.845)
+2017-12-24 14:04:18.135  INFO 9088 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-24 14:04:18.135  INFO 9088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-24 14:04:18.195  INFO 9088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 58 ms
+2017-12-24 14:04:18.686  WARN 9088 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : Request method 'GET' not supported
+2017-12-24 14:04:18.686  WARN 9088 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+2017-12-24 14:04:30.930  WARN 9088 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : Request method 'GET' not supported
+2017-12-24 14:04:30.932  WARN 9088 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+2017-12-24 14:05:34.903  WARN 9088 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : Request method 'GET' not supported
+2017-12-24 14:05:34.904  WARN 9088 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+2017-12-24 14:05:38.493  WARN 9088 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : Request method 'GET' not supported
+2017-12-24 14:05:38.496  WARN 9088 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+2017-12-24 14:05:48.651  INFO 3788 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Starting DrboxApplication on archer66 with PID 3788 (C:\Users\xingyi\IdeaProjects\drbox\target\classes started by xingyi in C:\Users\xingyi\IdeaProjects\drbox)
+2017-12-24 14:05:48.652 DEBUG 3788 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2017-12-24 14:05:48.652  INFO 3788 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : The following profiles are active: dev
+2017-12-24 14:05:48.959  INFO 3788 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ec9c5ce: startup date [Sun Dec 24 14:05:48 CST 2017]; root of context hierarchy
+2017-12-24 14:05:51.563  INFO 3788 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-12-24 14:05:51.581  INFO 3788 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-24 14:05:51.582  INFO 3788 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-24 14:05:51.703  INFO 3788 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-24 14:05:51.704  INFO 3788 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2745 ms
+2017-12-24 14:05:51.894  INFO 3788 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-24 14:05:51.899  INFO 3788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-24 14:05:51.899  INFO 3788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-24 14:05:51.900  INFO 3788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-24 14:05:51.900  INFO 3788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-24 14:05:52.602  INFO 3788 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-12-24 14:05:52.618  INFO 3788 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-12-24 14:05:52.719  INFO 3788 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-12-24 14:05:52.721  INFO 3788 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-12-24 14:05:52.723  INFO 3788 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-12-24 14:05:52.781  INFO 3788 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-24 14:05:53.032  INFO 3788 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-24 14:05:53.440  INFO 3788 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-12-24 14:05:53.591  INFO 3788 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-12-24 14:05:54.153  INFO 3788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ec9c5ce: startup date [Sun Dec 24 14:05:48 CST 2017]; root of context hierarchy
+2017-12-24 14:05:54.245  INFO 3788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/setUserInfo],methods=[GET]}" onto public java.lang.String com.lxy11.drbox.action.MainController.addNewUser(java.lang.String,java.lang.String,java.lang.String)
+2017-12-24 14:05:54.248  INFO 3788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/getUserInfo],methods=[GET]}" onto public java.lang.String com.lxy11.drbox.action.MainController.getUserInfoById(java.lang.Long)
+2017-12-24 14:05:54.252  INFO 3788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-24 14:05:54.253  INFO 3788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-24 14:05:54.294  INFO 3788 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 14:05:54.294  INFO 3788 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 14:05:54.344  INFO 3788 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 14:05:54.417  WARN 3788 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-12-24 14:05:55.014  INFO 3788 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-12-24 14:05:55.081  INFO 3788 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-24 14:05:55.147  INFO 3788 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-12-24 14:05:55.154  INFO 3788 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Started DrboxApplication in 7.292 seconds (JVM running for 8.98)
+2017-12-24 14:05:59.960  INFO 3788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-24 14:05:59.962  INFO 3788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-24 14:05:59.991  INFO 3788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2017-12-24 14:06:00.111  WARN 3788 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'id' is not present
+2017-12-24 14:06:23.770  WARN 3788 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present
+2017-12-24 14:08:46.035  WARN 3788 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present
+2017-12-24 14:13:07.186  WARN 3788 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present
+2017-12-24 14:14:35.226  WARN 3788 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present
+2017-12-24 14:16:11.517  WARN 3788 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present
+2017-12-24 14:16:24.892  WARN 3788 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present
+2017-12-24 14:16:35.664  WARN 3788 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present
+2017-12-24 14:19:14.375  WARN 3788 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present
+2017-12-24 14:19:28.406  WARN 3788 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present
+2017-12-24 14:19:51.723  WARN 3788 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present
+2017-12-24 14:31:59.946  WARN 3788 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'id' is not present
+2017-12-24 14:33:07.000  INFO 3788 --- [http-nio-8080-exec-5] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-12-24 21:00:10.420  INFO 16320 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Starting DrboxApplication on archer66 with PID 16320 (C:\Users\xingyi\IdeaProjects\drbox\target\classes started by xingyi in C:\Users\xingyi\IdeaProjects\drbox)
+2017-12-24 21:00:10.453 DEBUG 16320 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2017-12-24 21:00:10.454  INFO 16320 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : The following profiles are active: dev
+2017-12-24 21:00:11.350  INFO 16320 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f5dcd28: startup date [Sun Dec 24 21:00:11 CST 2017]; root of context hierarchy
+2017-12-24 21:00:19.241  INFO 16320 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-12-24 21:00:19.295  INFO 16320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-24 21:00:19.299  INFO 16320 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-24 21:00:19.604  INFO 16320 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-24 21:00:19.605  INFO 16320 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8255 ms
+2017-12-24 21:00:19.962  INFO 16320 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-24 21:00:19.968  INFO 16320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-24 21:00:19.968  INFO 16320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-24 21:00:19.969  INFO 16320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-24 21:00:19.969  INFO 16320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-24 21:00:23.797  INFO 16320 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-12-24 21:00:23.833  INFO 16320 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-12-24 21:00:24.090  INFO 16320 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-12-24 21:00:24.092  INFO 16320 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-12-24 21:00:24.094  INFO 16320 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-12-24 21:00:24.217  INFO 16320 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-24 21:00:25.726  INFO 16320 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-24 21:00:29.194  INFO 16320 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-12-24 21:00:34.448  INFO 16320 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-12-24 21:00:36.321  INFO 16320 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f5dcd28: startup date [Sun Dec 24 21:00:11 CST 2017]; root of context hierarchy
+2017-12-24 21:00:36.495  INFO 16320 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/getUserInfo],methods=[GET]}" onto public java.lang.String com.lxy11.drbox.action.MainController.getUserInfoById(java.lang.Long)
+2017-12-24 21:00:36.497  INFO 16320 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/setUserInfo],methods=[GET]}" onto public java.lang.String com.lxy11.drbox.action.MainController.addNewUser(java.lang.String,java.lang.String,java.lang.String)
+2017-12-24 21:00:36.505  INFO 16320 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-24 21:00:36.506  INFO 16320 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-24 21:00:36.634  INFO 16320 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 21:00:36.634  INFO 16320 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 21:00:36.764  INFO 16320 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 21:00:36.886  WARN 16320 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-12-24 21:00:38.881  INFO 16320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-12-24 21:00:39.081  INFO 16320 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-24 21:00:39.280  INFO 16320 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-12-24 21:00:39.304  INFO 16320 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Started DrboxApplication in 30.059 seconds (JVM running for 36.765)
+2017-12-24 21:04:43.141  INFO 16320 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-24 21:04:43.142  INFO 16320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-24 21:04:43.185  INFO 16320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2017-12-24 21:04:43.378  INFO 16320 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-12-24 21:30:19.073  INFO 12020 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Starting DrboxApplication on archer66 with PID 12020 (C:\Users\xingyi\IdeaProjects\drbox\target\classes started by xingyi in C:\Users\xingyi\IdeaProjects\drbox)
+2017-12-24 21:30:19.074 DEBUG 12020 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2017-12-24 21:30:19.075  INFO 12020 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : The following profiles are active: dev
+2017-12-24 21:30:19.584  INFO 12020 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18871e8e: startup date [Sun Dec 24 21:30:19 CST 2017]; root of context hierarchy
+2017-12-24 21:30:22.225  INFO 12020 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-12-24 21:30:22.239  INFO 12020 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-24 21:30:22.240  INFO 12020 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-24 21:30:22.363  INFO 12020 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-24 21:30:22.364  INFO 12020 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2780 ms
+2017-12-24 21:30:22.555  INFO 12020 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-24 21:30:22.562  INFO 12020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-24 21:30:22.563  INFO 12020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-24 21:30:22.564  INFO 12020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-24 21:30:22.564  INFO 12020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-24 21:30:23.392  INFO 12020 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-12-24 21:30:23.408  INFO 12020 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-12-24 21:30:23.475  INFO 12020 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-12-24 21:30:23.477  INFO 12020 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-12-24 21:30:23.479  INFO 12020 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-12-24 21:30:23.539  INFO 12020 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-24 21:30:23.815  INFO 12020 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-24 21:30:24.331  INFO 12020 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-12-24 21:30:24.626  INFO 12020 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-12-24 21:30:25.230  INFO 12020 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18871e8e: startup date [Sun Dec 24 21:30:19 CST 2017]; root of context hierarchy
+2017-12-24 21:30:25.325  INFO 12020 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getgoods]}" onto public com.lxy11.drbox.po.Goods com.lxy11.drbox.action.GoodsJsonController.getGoodsInfo()
+2017-12-24 21:30:25.330  INFO 12020 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/setUserInfo],methods=[GET]}" onto public java.lang.String com.lxy11.drbox.action.MainController.addNewUser(java.lang.String,java.lang.String,java.lang.String)
+2017-12-24 21:30:25.332  INFO 12020 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/getUserInfo],methods=[GET]}" onto public java.lang.String com.lxy11.drbox.action.MainController.getUserInfoById(java.lang.Long)
+2017-12-24 21:30:25.334  INFO 12020 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-24 21:30:25.335  INFO 12020 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-24 21:30:25.385  INFO 12020 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 21:30:25.385  INFO 12020 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 21:30:25.431  INFO 12020 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 21:30:25.477  WARN 12020 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-12-24 21:30:26.092  INFO 12020 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-12-24 21:30:26.189  INFO 12020 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-24 21:30:26.272  INFO 12020 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-12-24 21:30:26.281  INFO 12020 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Started DrboxApplication in 8.234 seconds (JVM running for 9.99)
+2017-12-24 21:31:10.475  INFO 12020 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-24 21:31:10.476  INFO 12020 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-24 21:31:10.506  INFO 12020 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2017-12-24 21:36:41.108  WARN 12020 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'id' is not present
+2017-12-24 21:37:04.259  WARN 12020 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required Long parameter 'id' is not present
+2017-12-24 21:38:35.454  INFO 12564 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Starting DrboxApplication on archer66 with PID 12564 (C:\Users\xingyi\IdeaProjects\drbox\target\classes started by xingyi in C:\Users\xingyi\IdeaProjects\drbox)
+2017-12-24 21:38:35.455 DEBUG 12564 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2017-12-24 21:38:35.455  INFO 12564 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : The following profiles are active: dev
+2017-12-24 21:38:35.980  INFO 12564 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b8c430: startup date [Sun Dec 24 21:38:35 CST 2017]; root of context hierarchy
+2017-12-24 21:38:38.935  INFO 12564 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-12-24 21:38:38.951  INFO 12564 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-24 21:38:38.953  INFO 12564 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-24 21:38:39.112  INFO 12564 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-24 21:38:39.113  INFO 12564 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3133 ms
+2017-12-24 21:38:39.339  INFO 12564 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-24 21:38:39.343  INFO 12564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-24 21:38:39.344  INFO 12564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-24 21:38:39.345  INFO 12564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-24 21:38:39.345  INFO 12564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-24 21:38:40.290  INFO 12564 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-12-24 21:38:40.305  INFO 12564 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-12-24 21:38:40.386  INFO 12564 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-12-24 21:38:40.388  INFO 12564 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-12-24 21:38:40.390  INFO 12564 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-12-24 21:38:40.436  INFO 12564 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-24 21:38:40.692  INFO 12564 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-24 21:38:41.120  INFO 12564 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-12-24 21:38:41.339  INFO 12564 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-12-24 21:38:41.894  INFO 12564 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b8c430: startup date [Sun Dec 24 21:38:35 CST 2017]; root of context hierarchy
+2017-12-24 21:38:41.993  INFO 12564 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getGoodsInfo]}" onto public com.lxy11.drbox.po.Goods com.lxy11.drbox.action.GoodsJsonController.getGoodsInfo()
+2017-12-24 21:38:41.998  INFO 12564 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/getUserInfoById]}" onto public com.lxy11.drbox.po.User com.lxy11.drbox.action.MainController.getUserInfoById()
+2017-12-24 21:38:42.001  INFO 12564 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/setUserInfo],methods=[GET]}" onto public java.lang.String com.lxy11.drbox.action.MainController.addNewUser(java.lang.String,java.lang.String,java.lang.String)
+2017-12-24 21:38:42.004  INFO 12564 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-24 21:38:42.006  INFO 12564 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-24 21:38:42.069  INFO 12564 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 21:38:42.069  INFO 12564 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 21:38:42.121  INFO 12564 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 21:38:42.172  WARN 12564 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-12-24 21:38:42.776  INFO 12564 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-12-24 21:38:42.858  INFO 12564 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-24 21:38:42.934  INFO 12564 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-12-24 21:38:42.941  INFO 12564 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Started DrboxApplication in 8.589 seconds (JVM running for 10.385)
+2017-12-24 21:38:48.028  INFO 12564 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-24 21:38:48.029  INFO 12564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-24 21:38:48.056  INFO 12564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2017-12-24 23:24:26.051  INFO 15396 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Starting DrboxApplication on archer66 with PID 15396 (C:\Users\xingyi\IdeaProjects\drbox\target\classes started by xingyi in C:\Users\xingyi\IdeaProjects\drbox)
+2017-12-24 23:24:26.053 DEBUG 15396 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2017-12-24 23:24:26.053  INFO 15396 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : The following profiles are active: dev
+2017-12-24 23:24:26.566  INFO 15396 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b9abd83: startup date [Sun Dec 24 23:24:26 CST 2017]; root of context hierarchy
+2017-12-24 23:24:29.441  INFO 15396 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-12-24 23:24:29.454  INFO 15396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-12-24 23:24:29.455  INFO 15396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-24 23:24:29.620  INFO 15396 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-12-24 23:24:29.621  INFO 15396 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3055 ms
+2017-12-24 23:24:29.808  INFO 15396 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-12-24 23:24:29.813  INFO 15396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-12-24 23:24:29.814  INFO 15396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-12-24 23:24:29.815  INFO 15396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-12-24 23:24:29.815  INFO 15396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-12-24 23:24:30.557  INFO 15396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-12-24 23:24:30.575  INFO 15396 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-12-24 23:24:30.642  INFO 15396 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-12-24 23:24:30.644  INFO 15396 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-12-24 23:24:30.645  INFO 15396 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-12-24 23:24:30.688  INFO 15396 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-24 23:24:30.947  INFO 15396 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-12-24 23:24:31.386  INFO 15396 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-12-24 23:24:31.604  INFO 15396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-12-24 23:24:32.167  INFO 15396 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b9abd83: startup date [Sun Dec 24 23:24:26 CST 2017]; root of context hierarchy
+2017-12-24 23:24:32.259  INFO 15396 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getGoodsInfo]}" onto public com.lxy11.drbox.po.Goods com.lxy11.drbox.action.GoodsJsonController.getGoodsInfo()
+2017-12-24 23:24:32.264  INFO 15396 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/getUserInfoById]}" onto public com.lxy11.drbox.po.RespEntity com.lxy11.drbox.action.MainController.getUserInfoById()
+2017-12-24 23:24:32.268  INFO 15396 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dreambox/setUserInfo],methods=[GET]}" onto public java.lang.String com.lxy11.drbox.action.MainController.addNewUser(java.lang.String,java.lang.String,java.lang.String)
+2017-12-24 23:24:32.272  INFO 15396 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-12-24 23:24:32.274  INFO 15396 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-24 23:24:32.322  INFO 15396 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 23:24:32.322  INFO 15396 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 23:24:32.367  INFO 15396 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-12-24 23:24:32.410  WARN 15396 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-12-24 23:24:32.934  INFO 15396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-12-24 23:24:33.011  INFO 15396 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-12-24 23:24:33.095  INFO 15396 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-12-24 23:24:33.102  INFO 15396 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Started DrboxApplication in 8.026 seconds (JVM running for 9.689)
+2017-12-24 23:24:42.159  INFO 15396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-24 23:24:42.161  INFO 15396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-12-24 23:24:42.185  INFO 15396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2017-12-24 23:24:42.276 ERROR 15396 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: No converter found for return value of type: class com.lxy11.drbox.po.RespEntity] with root cause
+
+java.lang.IllegalArgumentException: No converter found for return value of type: class com.lxy11.drbox.po.RespEntity
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:187)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:174)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:81)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:113)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+

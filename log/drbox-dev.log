@@ -1,0 +1,547 @@
+2018-01-22 00:22:37.773  INFO 48536 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Starting DrboxApplication on archer66 with PID 48536 (C:\Users\xingyi\IdeaProjects\drbox\target\classes started by xingyi in C:\Users\xingyi\IdeaProjects\drbox)
+2018-01-22 00:22:37.781 DEBUG 48536 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-22 00:22:37.782  INFO 48536 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : The following profiles are active: dev
+2018-01-22 00:22:38.191  INFO 48536 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@196cf3db: startup date [Mon Jan 22 00:22:38 CST 2018]; root of context hierarchy
+2018-01-22 00:22:41.473  INFO 48536 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-22 00:22:41.486  INFO 48536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-22 00:22:41.488  INFO 48536 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-22 00:22:41.660  INFO 48536 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-22 00:22:41.660  INFO 48536 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3470 ms
+2018-01-22 00:22:41.860  INFO 48536 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-22 00:22:41.865  INFO 48536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-22 00:22:41.865  INFO 48536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-22 00:22:41.866  INFO 48536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-22 00:22:41.867  INFO 48536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-22 00:22:42.672  INFO 48536 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-01-22 00:22:42.687  INFO 48536 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-01-22 00:22:42.918  INFO 48536 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-01-22 00:22:42.921  INFO 48536 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-01-22 00:22:42.923  INFO 48536 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-01-22 00:22:42.968  INFO 48536 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-01-22 00:22:43.106  INFO 48536 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-01-22 00:22:43.561  INFO 48536 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-01-22 00:22:43.698  INFO 48536 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-01-22 00:22:43.965  INFO 48536 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-01-22 00:22:44.683  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@196cf3db: startup date [Mon Jan 22 00:22:38 CST 2018]; root of context hierarchy
+2018-01-22 00:22:44.762  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chart/getChatInfoByGoodsId]}" onto public java.lang.Object com.lxy11.drbox.action.ChartController.getChatInfoByGoodsId(int)
+2018-01-22 00:22:44.763  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chart/getChartInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.ChartController.getChart(int)
+2018-01-22 00:22:44.766  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/deleteGoodsInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.deleteGoodsInfoById(com.lxy11.drbox.po.Goods)
+2018-01-22 00:22:44.766  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getGoodsInfoByUserId]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.getGoodsInfoByUserId(int)
+2018-01-22 00:22:44.767  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getGoodsInfo]}" onto public com.lxy11.drbox.po.Goods com.lxy11.drbox.action.GoodsController.getGoodsInfo()
+2018-01-22 00:22:44.767  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/addGoodsInfo]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.addGoodsInfo(com.lxy11.drbox.po.Goods)
+2018-01-22 00:22:44.770  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/adduser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.addUser(com.lxy11.drbox.po.User)
+2018-01-22 00:22:44.770  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getAllUserInfoByStatus]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.getUserInfoByStatus()
+2018-01-22 00:22:44.772  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.getUser(int)
+2018-01-22 00:22:44.773  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/updateuser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.updateUser(com.lxy11.drbox.po.User)
+2018-01-22 00:22:44.773  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/deleteuser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.deleteUser(int)
+2018-01-22 00:22:44.776  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-22 00:22:44.776  INFO 48536 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-22 00:22:44.814  INFO 48536 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 00:22:44.814  INFO 48536 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 00:22:44.869  INFO 48536 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 00:22:44.913  WARN 48536 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-22 00:22:45.547  INFO 48536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-22 00:22:45.617  INFO 48536 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-22 00:22:45.641  INFO 48536 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-22 00:22:45.700  INFO 48536 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-22 00:22:45.706  INFO 48536 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Started DrboxApplication in 9.065 seconds (JVM running for 10.744)
+2018-01-22 00:23:02.233 ERROR 48536 --- [pool-3-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.mail.MailSendException: Mail server connection failed; nested exception is com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect. Failed messages: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:432)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.lxy11.drbox.utils.EmailServiceImpl.sendSimpleMail(EmailServiceImpl.java:30)
+	at com.lxy11.drbox.utils.PriceScheduler.priceInsert(PriceScheduler.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2118)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:712)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 18 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:331)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:238)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2084)
+	... 22 common frames omitted
+
+2018-01-22 00:24:01.935 ERROR 48536 --- [pool-3-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.mail.MailSendException: Mail server connection failed; nested exception is com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect. Failed messages: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:432)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.lxy11.drbox.utils.EmailServiceImpl.sendSimpleMail(EmailServiceImpl.java:30)
+	at com.lxy11.drbox.utils.PriceScheduler.priceInsert(PriceScheduler.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2118)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:712)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 18 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:331)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:238)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2084)
+	... 22 common frames omitted
+
+2018-01-22 00:25:01.975 ERROR 48536 --- [pool-3-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.mail.MailSendException: Mail server connection failed; nested exception is com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect. Failed messages: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:432)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.lxy11.drbox.utils.EmailServiceImpl.sendSimpleMail(EmailServiceImpl.java:30)
+	at com.lxy11.drbox.utils.PriceScheduler.priceInsert(PriceScheduler.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2118)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:712)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 18 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:331)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:238)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2084)
+	... 22 common frames omitted
+
+2018-01-22 00:26:01.971 ERROR 48536 --- [pool-3-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.mail.MailSendException: Mail server connection failed; nested exception is com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect. Failed messages: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:432)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.lxy11.drbox.utils.EmailServiceImpl.sendSimpleMail(EmailServiceImpl.java:30)
+	at com.lxy11.drbox.utils.PriceScheduler.priceInsert(PriceScheduler.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2118)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:712)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 18 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:331)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:238)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2084)
+	... 22 common frames omitted
+
+2018-01-22 00:27:02.331  INFO 53440 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Starting DrboxApplication on archer66 with PID 53440 (C:\Users\xingyi\IdeaProjects\drbox\target\classes started by xingyi in C:\Users\xingyi\IdeaProjects\drbox)
+2018-01-22 00:27:02.333 DEBUG 53440 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-22 00:27:02.333  INFO 53440 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : The following profiles are active: dev
+2018-01-22 00:27:02.896  INFO 53440 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e27df11: startup date [Mon Jan 22 00:27:02 CST 2018]; root of context hierarchy
+2018-01-22 00:27:06.319  INFO 53440 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-22 00:27:06.332  INFO 53440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-22 00:27:06.333  INFO 53440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-22 00:27:06.472  INFO 53440 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-22 00:27:06.473  INFO 53440 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3576 ms
+2018-01-22 00:27:06.667  INFO 53440 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-22 00:27:06.672  INFO 53440 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-22 00:27:06.673  INFO 53440 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-22 00:27:06.674  INFO 53440 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-22 00:27:06.674  INFO 53440 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-22 00:27:07.508  INFO 53440 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-01-22 00:27:07.525  INFO 53440 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-01-22 00:27:07.746  INFO 53440 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-01-22 00:27:07.748  INFO 53440 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-01-22 00:27:07.749  INFO 53440 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-01-22 00:27:07.792  INFO 53440 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-01-22 00:27:07.906  INFO 53440 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-01-22 00:27:08.357  INFO 53440 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-01-22 00:27:08.510  INFO 53440 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-01-22 00:27:08.760  INFO 53440 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-01-22 00:27:09.527  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e27df11: startup date [Mon Jan 22 00:27:02 CST 2018]; root of context hierarchy
+2018-01-22 00:27:09.604  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chart/getChartInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.ChartController.getChart(int)
+2018-01-22 00:27:09.606  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chart/getChatInfoByGoodsId]}" onto public java.lang.Object com.lxy11.drbox.action.ChartController.getChatInfoByGoodsId(int)
+2018-01-22 00:27:09.608  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getGoodsInfo]}" onto public com.lxy11.drbox.po.Goods com.lxy11.drbox.action.GoodsController.getGoodsInfo()
+2018-01-22 00:27:09.609  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/addGoodsInfo]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.addGoodsInfo(com.lxy11.drbox.po.Goods)
+2018-01-22 00:27:09.609  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getGoodsInfoByUserId]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.getGoodsInfoByUserId(int)
+2018-01-22 00:27:09.609  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/deleteGoodsInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.deleteGoodsInfoById(com.lxy11.drbox.po.Goods)
+2018-01-22 00:27:09.612  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/adduser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.addUser(com.lxy11.drbox.po.User)
+2018-01-22 00:27:09.613  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getAllUserInfoByStatus]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.getUserInfoByStatus()
+2018-01-22 00:27:09.613  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/updateuser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.updateUser(com.lxy11.drbox.po.User)
+2018-01-22 00:27:09.614  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/deleteuser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.deleteUser(int)
+2018-01-22 00:27:09.614  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.getUser(int)
+2018-01-22 00:27:09.616  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-22 00:27:09.616  INFO 53440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-22 00:27:09.653  INFO 53440 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 00:27:09.653  INFO 53440 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 00:27:09.703  INFO 53440 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 00:27:09.746  WARN 53440 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-22 00:27:10.355  INFO 53440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-22 00:27:10.465  INFO 53440 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-22 00:27:10.485  INFO 53440 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-22 00:27:10.550  INFO 53440 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-22 00:27:10.556  INFO 53440 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Started DrboxApplication in 9.47 seconds (JVM running for 11.282)
+2018-01-22 00:28:03.863 ERROR 53440 --- [pool-2-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.mail.MailSendException: Mail server connection failed; nested exception is com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect. Failed messages: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:432)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.lxy11.drbox.utils.EmailServiceImpl.sendSimpleMail(EmailServiceImpl.java:30)
+	at com.lxy11.drbox.utils.PriceScheduler.priceInsert(PriceScheduler.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2118)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:712)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 18 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:331)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:238)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2084)
+	... 22 common frames omitted
+
+2018-01-22 00:29:01.884 ERROR 53440 --- [pool-2-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.springframework.mail.MailSendException: Mail server connection failed; nested exception is com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect. Failed messages: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:432)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:307)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:296)
+	at com.lxy11.drbox.utils.EmailServiceImpl.sendSimpleMail(EmailServiceImpl.java:30)
+	at com.lxy11.drbox.utils.PriceScheduler.priceInsert(PriceScheduler.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2118)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:712)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:501)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:421)
+	... 18 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:331)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:238)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2084)
+	... 22 common frames omitted
+
+2018-01-22 00:33:05.026  INFO 23292 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Starting DrboxApplication on archer66 with PID 23292 (C:\Users\xingyi\IdeaProjects\drbox\target\classes started by xingyi in C:\Users\xingyi\IdeaProjects\drbox)
+2018-01-22 00:33:05.028 DEBUG 23292 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-22 00:33:05.028  INFO 23292 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : The following profiles are active: dev
+2018-01-22 00:33:05.608  INFO 23292 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@607fe6a0: startup date [Mon Jan 22 00:33:05 CST 2018]; root of context hierarchy
+2018-01-22 00:33:08.802  INFO 23292 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-22 00:33:08.814  INFO 23292 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-22 00:33:08.815  INFO 23292 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-22 00:33:08.957  INFO 23292 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-22 00:33:08.958  INFO 23292 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3350 ms
+2018-01-22 00:33:09.206  INFO 23292 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-22 00:33:09.212  INFO 23292 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-22 00:33:09.212  INFO 23292 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-22 00:33:09.213  INFO 23292 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-22 00:33:09.214  INFO 23292 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-22 00:33:10.061  INFO 23292 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-01-22 00:33:10.081  INFO 23292 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-01-22 00:33:10.314  INFO 23292 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-01-22 00:33:10.316  INFO 23292 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-01-22 00:33:10.318  INFO 23292 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-01-22 00:33:10.360  INFO 23292 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-01-22 00:33:10.474  INFO 23292 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-01-22 00:33:10.918  INFO 23292 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-01-22 00:33:11.087  INFO 23292 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-01-22 00:33:11.335  INFO 23292 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-01-22 00:33:11.965  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@607fe6a0: startup date [Mon Jan 22 00:33:05 CST 2018]; root of context hierarchy
+2018-01-22 00:33:12.087  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chart/getChartInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.ChartController.getChart(int)
+2018-01-22 00:33:12.088  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chart/getChatInfoByGoodsId]}" onto public java.lang.Object com.lxy11.drbox.action.ChartController.getChatInfoByGoodsId(int)
+2018-01-22 00:33:12.091  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getGoodsInfo]}" onto public com.lxy11.drbox.po.Goods com.lxy11.drbox.action.GoodsController.getGoodsInfo()
+2018-01-22 00:33:12.092  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/addGoodsInfo]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.addGoodsInfo(com.lxy11.drbox.po.Goods)
+2018-01-22 00:33:12.093  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/deleteGoodsInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.deleteGoodsInfoById(com.lxy11.drbox.po.Goods)
+2018-01-22 00:33:12.093  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getGoodsInfoByUserId]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.getGoodsInfoByUserId(int)
+2018-01-22 00:33:12.097  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/adduser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.addUser(com.lxy11.drbox.po.User)
+2018-01-22 00:33:12.098  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/updateuser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.updateUser(com.lxy11.drbox.po.User)
+2018-01-22 00:33:12.098  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.getUser(int)
+2018-01-22 00:33:12.099  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/deleteuser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.deleteUser(int)
+2018-01-22 00:33:12.099  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getAllUserInfoByStatus]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.getUserInfoByStatus()
+2018-01-22 00:33:12.103  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-22 00:33:12.104  INFO 23292 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-22 00:33:12.158  INFO 23292 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 00:33:12.159  INFO 23292 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 00:33:12.224  INFO 23292 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 00:33:12.283  WARN 23292 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-22 00:33:12.929  INFO 23292 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-22 00:33:13.012  INFO 23292 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-22 00:33:13.034  INFO 23292 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-22 00:33:13.089  INFO 23292 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-22 00:33:13.095  INFO 23292 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Started DrboxApplication in 9.171 seconds (JVM running for 10.798)
+2018-01-22 00:34:01.005  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 邮件成功发送至用户ID为:1 
+2018-01-22 00:34:01.872  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 该商品未降价 商品名称：美的（ Midea） ZS20B多功能风暖浴霸双电机液晶显示适用集成吊顶 
+2018-01-22 00:34:02.673  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 该商品未降价 商品名称：【二手9成新】Apple iPhone6 Plus 苹果6 Plus手机 金色 16G 全网通 
+2018-01-22 00:34:03.466  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 邮件成功发送至用户ID为:2 
+2018-01-22 00:34:04.276  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 邮件成功发送至用户ID为:1 
+2018-01-22 00:35:00.917  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 邮件成功发送至用户ID为:1 
+2018-01-22 00:35:01.748  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 该商品未降价 商品名称：美的（ Midea） ZS20B多功能风暖浴霸双电机液晶显示适用集成吊顶 
+2018-01-22 00:35:02.572  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 该商品未降价 商品名称：【二手9成新】Apple iPhone6 Plus 苹果6 Plus手机 金色 16G 全网通 
+2018-01-22 00:35:03.323  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 邮件成功发送至用户ID为:2 
+2018-01-22 00:35:04.293  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 邮件成功发送至用户ID为:1 
+2018-01-22 00:36:00.799  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 邮件成功发送至用户ID为:1 
+2018-01-22 00:36:01.604  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 该商品未降价 商品名称：美的（ Midea） ZS20B多功能风暖浴霸双电机液晶显示适用集成吊顶 
+2018-01-22 00:36:02.435  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 该商品未降价 商品名称：【二手9成新】Apple iPhone6 Plus 苹果6 Plus手机 金色 16G 全网通 
+2018-01-22 00:36:03.414  INFO 23292 --- [pool-2-thread-1] com.lxy11.drbox.utils.PriceScheduler     : 邮件成功发送至用户ID为:2 
+2018-01-22 00:37:56.658  INFO 49232 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Starting DrboxApplication on archer66 with PID 49232 (C:\Users\xingyi\IdeaProjects\drbox\target\classes started by xingyi in C:\Users\xingyi\IdeaProjects\drbox)
+2018-01-22 00:37:56.660 DEBUG 49232 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-22 00:37:56.660  INFO 49232 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : The following profiles are active: dev
+2018-01-22 00:37:57.202  INFO 49232 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@681f4f85: startup date [Mon Jan 22 00:37:57 CST 2018]; root of context hierarchy
+2018-01-22 00:38:00.090  INFO 49232 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-22 00:38:00.101  INFO 49232 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-22 00:38:00.102  INFO 49232 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-22 00:38:00.249  INFO 49232 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-22 00:38:00.250  INFO 49232 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3048 ms
+2018-01-22 00:38:00.439  INFO 49232 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-22 00:38:00.443  INFO 49232 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-22 00:38:00.444  INFO 49232 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-22 00:38:00.445  INFO 49232 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-22 00:38:00.445  INFO 49232 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-22 00:38:01.280  INFO 49232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-01-22 00:38:01.296  INFO 49232 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-01-22 00:38:01.510  INFO 49232 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-01-22 00:38:01.511  INFO 49232 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-01-22 00:38:01.513  INFO 49232 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-01-22 00:38:01.566  INFO 49232 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-01-22 00:38:01.706  INFO 49232 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-01-22 00:38:02.156  INFO 49232 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-01-22 00:38:02.312  INFO 49232 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-01-22 00:38:02.569  INFO 49232 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-01-22 00:38:03.201  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@681f4f85: startup date [Mon Jan 22 00:37:57 CST 2018]; root of context hierarchy
+2018-01-22 00:38:03.291  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chart/getChatInfoByGoodsId]}" onto public java.lang.Object com.lxy11.drbox.action.ChartController.getChatInfoByGoodsId(int)
+2018-01-22 00:38:03.292  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chart/getChartInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.ChartController.getChart(int)
+2018-01-22 00:38:03.295  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getGoodsInfoByUserId]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.getGoodsInfoByUserId(int)
+2018-01-22 00:38:03.297  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/deleteGoodsInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.deleteGoodsInfoById(com.lxy11.drbox.po.Goods)
+2018-01-22 00:38:03.298  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getGoodsInfo]}" onto public com.lxy11.drbox.po.Goods com.lxy11.drbox.action.GoodsController.getGoodsInfo()
+2018-01-22 00:38:03.298  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/addGoodsInfo]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.addGoodsInfo(com.lxy11.drbox.po.Goods)
+2018-01-22 00:38:03.301  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getAllUserInfoByStatus]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.getUserInfoByStatus()
+2018-01-22 00:38:03.303  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/adduser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.addUser(com.lxy11.drbox.po.User)
+2018-01-22 00:38:03.303  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.getUser(int)
+2018-01-22 00:38:03.304  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/updateuser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.updateUser(com.lxy11.drbox.po.User)
+2018-01-22 00:38:03.304  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/deleteuser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.deleteUser(int)
+2018-01-22 00:38:03.306  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-22 00:38:03.307  INFO 49232 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-22 00:38:03.355  INFO 49232 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 00:38:03.356  INFO 49232 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 00:38:03.415  INFO 49232 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 00:38:03.463  WARN 49232 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-22 00:38:04.077  INFO 49232 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-22 00:38:04.144  INFO 49232 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-22 00:38:04.164  INFO 49232 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-22 00:38:04.221  INFO 49232 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-22 00:38:04.227  INFO 49232 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Started DrboxApplication in 8.614 seconds (JVM running for 10.161)
+2018-01-22 22:56:41.939  INFO 6088 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Starting DrboxApplication on archer66 with PID 6088 (C:\Users\xingyi\IdeaProjects\drbox\target\classes started by xingyi in C:\Users\xingyi\IdeaProjects\drbox)
+2018-01-22 22:56:41.939 DEBUG 6088 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-22 22:56:41.939  INFO 6088 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : The following profiles are active: dev
+2018-01-22 22:56:42.689  INFO 6088 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e245875: startup date [Mon Jan 22 22:56:42 CST 2018]; root of context hierarchy
+2018-01-22 22:56:48.242  INFO 6088 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-22 22:56:48.273  INFO 6088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-22 22:56:48.273  INFO 6088 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-22 22:56:48.476  INFO 6088 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-22 22:56:48.476  INFO 6088 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5787 ms
+2018-01-22 22:56:48.867  INFO 6088 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-22 22:56:48.914  INFO 6088 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-22 22:56:48.914  INFO 6088 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-22 22:56:48.914  INFO 6088 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-22 22:56:48.914  INFO 6088 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-22 22:56:49.961  INFO 6088 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-01-22 22:56:49.977  INFO 6088 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-01-22 22:56:50.234  INFO 6088 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-01-22 22:56:50.249  INFO 6088 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-01-22 22:56:50.249  INFO 6088 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-01-22 22:56:50.296  INFO 6088 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-01-22 22:56:50.437  INFO 6088 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-01-22 22:56:50.953  INFO 6088 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-01-22 22:56:51.203  INFO 6088 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-01-22 22:56:51.453  INFO 6088 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-01-22 22:56:52.015  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e245875: startup date [Mon Jan 22 22:56:42 CST 2018]; root of context hierarchy
+2018-01-22 22:56:52.093  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chart/getChatInfoByGoodsId]}" onto public java.lang.Object com.lxy11.drbox.action.ChartController.getChatInfoByGoodsId(int)
+2018-01-22 22:56:52.093  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/chart/getChartInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.ChartController.getChart(int)
+2018-01-22 22:56:52.093  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getGoodsInfoByUserId]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.getGoodsInfoByUserId(int)
+2018-01-22 22:56:52.093  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/deleteGoodsInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.deleteGoodsInfoById(com.lxy11.drbox.po.Goods)
+2018-01-22 22:56:52.093  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getGoodsInfo]}" onto public com.lxy11.drbox.po.Goods com.lxy11.drbox.action.GoodsController.getGoodsInfo()
+2018-01-22 22:56:52.093  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/addGoodsInfo]}" onto public java.lang.Object com.lxy11.drbox.action.GoodsController.addGoodsInfo(com.lxy11.drbox.po.Goods)
+2018-01-22 22:56:52.093  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getAllUserInfoByStatus]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.getUserInfoByStatus()
+2018-01-22 22:56:52.093  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/adduser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.addUser(com.lxy11.drbox.po.User)
+2018-01-22 22:56:52.093  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/deleteuser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.deleteUser(int)
+2018-01-22 22:56:52.093  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/updateuser]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.updateUser(com.lxy11.drbox.po.User)
+2018-01-22 22:56:52.093  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUserInfoById]}" onto public java.lang.Object com.lxy11.drbox.action.UserController.getUser(int)
+2018-01-22 22:56:52.109  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-22 22:56:52.109  INFO 6088 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-22 22:56:52.156  INFO 6088 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 22:56:52.156  INFO 6088 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 22:56:52.203  INFO 6088 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-22 22:56:52.296  WARN 6088 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-01-22 22:56:52.968  INFO 6088 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-01-22 22:56:53.031  INFO 6088 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-22 22:56:53.046  INFO 6088 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-22 22:56:53.101  INFO 6088 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-22 22:56:53.101  INFO 6088 --- [restartedMain] com.lxy11.drbox.DrboxApplication         : Started DrboxApplication in 12.201 seconds (JVM running for 17.781)
